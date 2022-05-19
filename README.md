@@ -35,6 +35,10 @@ It is a project's Python module, I import my dataclasses from here.
 
 My data model uses embedded documents to describe a one-to-one relationship between connected data. It can reduce the number of read operations required to obtain data:
 
+<img src="img1.jpg" width="500" height="250"/>
+
+
+
 
 
 
