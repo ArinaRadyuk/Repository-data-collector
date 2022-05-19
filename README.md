@@ -1,6 +1,6 @@
 # Repository data collector
 
-- Collects the following data using Scrapy for each link: repository name, description, link, number of stars, number of forks, number of watching, number of commits, info about the latest commit (author, name, UTC datetime),  number of releases, info about the latest release (version, creation datetime, changelog) 
+- Collects the following data using Scrapy for each link: repository name, description, link, number of stars, number of forks, number of watching, number of commits, info about the latest commit (author, name, UTC datetime),  number of releases, info about the latest release (version, creation UTC datetime, changelog) 
 - Stores data in MongoDB database
 
 ## Installation
@@ -22,4 +22,7 @@ pip install pymongo
 ### items.py
 
 The main goal of scraping is to extract unstructured data and convert it to meaningful, structured data.
-There are several dataclasses: GithubItem, which contains information about repository id,name, description, link, number of stars, number of forks, number of watching, number of commits,  number of releases.
+There are several dataclasses: 
+1. GithubItem, which contains information about repository id, name, description, link, number of stars, number of forks, number of watching, number of commits,  number of releases.
+2. CommitInfo, which contains information about author, name, UTC datetime of the latest commit.
+3. ReleaseInfo, which contains information about version, creation UTC datetime, changelog of the latest release.
