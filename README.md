@@ -17,7 +17,7 @@ pip install pymongo
 1. scrapy crawl reviewspider -a start_urls="https://github.com/scrapy,https://github.com/celery/"
 2. scrapy crawl reviewspider -a start_urls="https://github.com/scrapy"
 
-## Understanding the project
+## Project
 
 ### items.py
 
