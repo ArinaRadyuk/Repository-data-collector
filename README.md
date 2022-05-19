@@ -31,4 +31,9 @@ There are several dataclasses:
 
 It is a project's Python module, I import my dataclasses from here.
 
+### pipelines.py
+
+My data model uses embedded documents to describe a one-to-one relationship between connected data. Embedding connected data in a single document can reduce the number of read operations required to obtain data. I embed the ReleaseInfo data and CommitInfo data in the Github data, as in the following document:
+
+
 
