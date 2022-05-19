@@ -30,7 +30,7 @@ There are several dataclasses:
 ### reviewspider.py 
 
 First of all, the parse() method looks for the link view all. After extracting the data from the first page, the parse() method looks for the link to the next page and yields a new request to the next page, registering itself as callback to handle the data extraction for the next page and to keep the crawling going through all the pages. 
-The process of extracting data from the page is as follows: visit repositories to yield GithubItem from them, then proceed to extra links to extract information about the latest commit and release.
+The process of extracting data from the page is as follows: visiting repositories to yield GithubItem from them, after that the program proceeds to extra links to extract information about the latest commit and release.
 
 ### pipelines.py
 
