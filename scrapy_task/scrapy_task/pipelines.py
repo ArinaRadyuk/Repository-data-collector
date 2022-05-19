@@ -25,6 +25,4 @@ class MongoDBPipeline:
                 self.collection.update_one({"_id": item.get("repo_id")}, {"$set": {"last_release": asdict(item['last_release'])}}, upsert=True)
             if item.get('last_commit') is not None:
                 self.collection.update_one({"_id": item.get("repo_id")}, {"$set": {"last_commit": asdict(item['last_commit'])}}, upsert=True)
-
-
         return item
