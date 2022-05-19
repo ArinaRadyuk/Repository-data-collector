@@ -78,5 +78,3 @@ class ReviewSpider(scrapy.Spider):
         if next_page is not None:
             next_page = "https://github.com" + next_page
             yield scrapy.Request(next_page, callback=self.parse)
-
-# scrapy crawl reviewspider -a start_urls="https://github.com/scrapy,https://github.com/celery/"
