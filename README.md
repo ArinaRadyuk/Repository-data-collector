@@ -26,3 +26,9 @@ There are several dataclasses:
 1. GithubItem, which contains information about repository id, name, description, link, number of stars, number of forks, number of watching, number of commits,  number of releases.
 2. CommitInfo, which contains information about author, name, UTC datetime of the latest commit.
 3. ReleaseInfo, which contains information about version, creation UTC datetime, changelog of the latest release.
+
+### __init__.py
+
+It is a project's Python module, I import my dataclasses from here.
+
+
