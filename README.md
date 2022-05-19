@@ -38,5 +38,5 @@ My data model uses embedded documents to describe a one-to-one relationship betw
 
 <img src="img1.jpg" width="500" height="250"/>
 
-### Some other files:
-__init__.py - a project's Python module, I import my dataclasses from here, settings.py - project settings file, middlewares.py - project middlewares file.
+### Some other files
+***__init__.py*** - a project's Python module, I import my dataclasses from here, ***settings.py*** - project settings file, ***middlewares.py*** - project middlewares file.
