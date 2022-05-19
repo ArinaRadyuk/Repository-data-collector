@@ -27,9 +27,10 @@ There are several dataclasses:
 2. CommitInfo, which contains information about author, name, UTC datetime of the latest commit.
 3. ReleaseInfo, which contains information about version, creation UTC datetime, changelog of the latest release.
 
-### __init__.py
+### reviewspider.py 
 
-It is a project's Python module, I import my dataclasses from here.
+First of all, the parse() method looks for the link view all. After extracting the data from the first page, the parse() method looks for the link to the next page and yields a new request to the next page, registering itself as callback to handle the data extraction for the next page and to keep the crawling going through all the pages. 
+The process of extracting data from the page is as follows: visit repositories to yield GithubItem from them, then proceed to extra links to extract information about the latest commit and release.
 
 ### pipelines.py
 
@@ -37,8 +38,6 @@ My data model uses embedded documents to describe a one-to-one relationship betw
 
 <img src="img1.jpg" width="500" height="250"/>
 
+### Some other files:
 
-
-
-
-
+1. __init__.py - a project's Python module, I import my dataclasses from here, settings.py - project settings file, middlewares.py - project middlewares file.
