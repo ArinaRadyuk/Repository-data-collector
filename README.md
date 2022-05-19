@@ -1,7 +1,6 @@
 # Repository data collector
 
-- Collects the following data using Scrapy for each link: repository name, description, link, number of stars, number of forks, number of watching, number of commits, info about the latest commit (author, name, UTC datetime),  number of releases, info about the latest release (version, creation UTC datetime, changelog) 
-- Stores data in MongoDB database
+It is a tool which parses git repositories using Scrapy and stores data in MongoDB.
 
 ## Installation
 
@@ -10,8 +9,14 @@ pip install scrapy
 pip install pymongo
 ```
 ## Usage
-1. make sure you are in scrapy_task folder
-2. scrapy crawl reviewspider -a start_urls=<file_name1,file_name2,...>
+In order to use the Repositor-data-collector please change into the scrapy_task folder and execute the following command:
+
+```sh
+scrapy crawl reviewspider -a start_urls=<file_name1,file_name2,...>
+```
+What does the program will do?
+- It will collect the data from repositories for each link: repository name, description, link, number of stars, number of forks, number of watching, number of commits, info about the latest commit (author, name, UTC datetime),  number of releases, info about the latest release (version, creation UTC datetime, changelog) 
+- It will store data in database "github" and table "github_tb".
 
 ## Example
 1. scrapy crawl reviewspider -a start_urls="https://github.com/scrapy,https://github.com/celery/"
