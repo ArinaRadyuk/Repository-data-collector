@@ -16,3 +16,10 @@ pip install pymongo
 ## Example
 1. scrapy crawl reviewspider -a start_urls="https://github.com/scrapy,https://github.com/celery/"
 2. scrapy crawl reviewspider -a start_urls="https://github.com/scrapy"
+
+## Understanding the project
+
+### items.py
+
+The main goal of scraping is to extract unstructured data and convert it to meaningful, structured data.
+There are several dataclasses: GithubItem, which contains information about repository id,name, description, link, number of stars, number of forks, number of watching, number of commits,  number of releases.
