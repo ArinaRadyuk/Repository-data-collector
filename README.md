@@ -36,7 +36,7 @@ The process of extracting data from the page is as follows: visiting repositorie
 
 My data model uses embedded documents to describe a one-to-one relationship between connected data. It can reduce the number of read operations required to obtain data:
 
-<img src="img1.jpg" width="500" height="250"/>
+<img src="img1.jpg" width="500" height="300"/>
 
 ### Some other files
 ***__init__.py*** - a project's Python module, I import my dataclasses from here, ***settings.py*** - project settings file, ***middlewares.py*** - project middlewares file.
